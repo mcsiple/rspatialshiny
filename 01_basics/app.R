@@ -1,8 +1,8 @@
 # Shiny intro
-# Example 1: orange trees
 
 # This is a Shiny web application. In RStudio you can run the application by clicking 'Run App' button above.
 
+### Example 1: orange trees
 # Tasks to try: 
 # - Change what the user sees in the selectInput menu to “Tree 1”, “Tree 2”, and “Tree 3”
 # - Use `h6()` to put text above each plot describing what it does
@@ -20,15 +20,15 @@ ui <- fluidPage(
    h5("This app plots orange tree data from three different trees."),
    # Sidebar with checkbox input 
    sidebarLayout( # This defines the layout of the whole page.
-     # Other options include tabsetPanel(), navlistPanel()
+      # Other options include tabsetPanel(), navlistPanel()
       sidebarPanel(  # Everything in sidebarPanel() describes the contents of the sidebar in the UI
          checkboxGroupInput(inputId = "treeID", # inputID links ui to the server logic
                             label = "Tree number:", # The label is what the user sees
-                             c("1" = 1, 
-                               "2" = 2,
-                               "3" = 3),
-                             selected="1" # Default selection
-                             )
+                            c("1" = 1, 
+                              "2" = 2,
+                              "3" = 3),
+                            selected="1" # Default selection
+         )
       ),
       
       # Show plots
@@ -42,9 +42,9 @@ ui <- fluidPage(
 # Define server logic required to plot
 server <- function(input, output) {
    
-  # Scatterplot
+   # Scatterplot
    output$orangePlot <- renderPlot({
-     # subset to the trees that the user selected:
+      # subset to the trees that the user selected:
       which.trees <- input$treeID
       tree <- subset(Orange,Tree %in% which.trees)
       
@@ -58,14 +58,14 @@ server <- function(input, output) {
    
    # Histogram
    output$orangeHist <- renderPlot({
-     which.trees <- input$treeID
-     tree <- subset(Orange,Tree %in% which.trees) 
-     # Notice, you have to define tree again in this function
-     
-     hist(tree$circumference,
-          col=alpha("forestgreen",0.5),
-          main="",
-          xlab="Circumference (mm)")
+      which.trees <- input$treeID
+      tree <- subset(Orange,Tree %in% which.trees) 
+      # Notice, you have to define tree again in this function
+      
+      hist(tree$circumference,
+           col=alpha("forestgreen",0.5),
+           main="",
+           xlab="Circumference (mm)")
    })
 }
 
