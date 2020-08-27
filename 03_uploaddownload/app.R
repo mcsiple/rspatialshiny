@@ -1,8 +1,17 @@
-# Example 3: Abalone
+### Shiny intro
+### Example 3: Abalone
+
 # This app allows users to:
 # - upload a csv
 # - create a reactive object that can be accessed from other objects
 # - download a csv containing the results of some action performed on the server
+
+### Exercises
+# -	Create a second `reactive()` object `abalonesummary` that summarizes the abalone data by sex
+# -	Then create a new plot (or summary table—or both!) that calls `abalonesummary` and plots the summary
+# -	Bonus: Create a new `reactive()` object for the predictions from a `lm()` (or a model of your choice), then add that as a layer in `ggplot()`
+# -	Bonus bonus: Add a checkbox that allows the user to decide whether they want to show the predictions on the plot or not
+
 
 packages <- c("shiny","tidyverse")
 lapply(packages, library, character.only = T)

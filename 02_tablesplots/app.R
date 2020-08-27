@@ -1,6 +1,6 @@
-# Shiny intro
-
+### Shiny intro
 ### Example 2: Swiss dogs 
+
 # Tasks to try:
 # - Around line 29 (under `sidebarPanel()`), add a second `selectInput()` option that allows the user to select a district (make the default District 11)
 # - Use that new input with `filter()` to subset the data around line 66, to show a table of the most popular dogs in the district

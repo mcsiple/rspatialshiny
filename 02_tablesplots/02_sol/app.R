@@ -1,6 +1,5 @@
-# Shiny intro
-
-### Example 2: Swiss dogs 
+### Shiny intro
+### Example 2: Swiss dogs - solution
 
 library(shiny)
 library(tidyverse)

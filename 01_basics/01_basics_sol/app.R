@@ -1,5 +1,5 @@
-# Rladies Shiny workshop
-# Example 1 - 'solutions'
+### Shiny intro
+### Example 1: orange trees - solution
 
 # This is a Shiny web application. In Rstudio you can run the application by clicking
 # the 'Run App' button above.

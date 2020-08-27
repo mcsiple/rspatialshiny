@@ -1,9 +1,9 @@
-# Shiny intro
+### Shiny intro
+### Example 1: orange trees
 
 # This is a Shiny web application. In RStudio you can run the application by clicking 'Run App' button above.
 
-### Example 1: orange trees
-# Tasks to try: 
+# Exercises:
 # - Change what the user sees in the selectInput menu to “Tree 1”, “Tree 2”, and “Tree 3”
 # - Use `h6()` to put text above each plot describing what it does
 # - Change the color of the histogram to orange

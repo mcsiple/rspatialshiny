@@ -1,4 +1,5 @@
-# Example 3: Abalone - "solutions"
+### Shiny intro
+### Example 3: Abalone - solution
 # This app allows users to:
 # - upload a csv
 # - create a reactive object that can be accessed from other objects
